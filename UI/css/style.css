@@ -1,0 +1,305 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+  }
+  /* search box */
+  #wrapper{
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-gap: 0px;
+    }
+
+  header{
+      max-width: 100%;    background-color: #333;
+
+  }
+ #second-section {
+   display: flex;
+    margin-top: 5px;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .wrapper {
+      width: 100%;
+      margin: auto; 
+      
+
+  }
+  .wrapper .top-nav label{
+    margin: 0;
+    padding: 12px 0px;
+    width:50px;
+    margin-top: 5px;
+      }
+  .wrapper .top-nav input[type="text"]{
+margin: 0;
+padding: 8px 0px;
+  }
+  .wrapper .top-nav input[type="submit"]{
+    margin: 0;
+    padding: 8px 0px;
+    width:100px;
+      }
+  .top-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .top-nav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  .top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .top-nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .top-nav a:not(:first-child) {display: none;}
+    .top-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .top-nav.responsive {position: relative;}
+    .top-nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .top-nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .image-slide{
+     height: 400px;
+     overflow: hidden;
+  }
+  .image-slide img{
+      height: 100%;
+  }
+  img {
+      width: 100%;
+  }
+  section{
+    width: 100%;
+    
+  }
+  /*section aside and article*/
+
+  @media screen and (min-width: 500px) {
+
+    /* no grid support? */
+    .sidebar {
+     display: flex;
+     flex-direction: column;
+      width: 20%;
+      background-color:#777777;
+    }
+  
+    .content {
+      display: flex;
+      justify-content: end;
+      width: 80%;
+      background-color: #888;
+    }
+  }
+
+/* Full-width input fields sign up ans sign in */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.sign-up-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #00664C;
+  background-image:url('../images/sign-up-background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/*filter css*/
+.filter h1{
+  display: flex;
+  justify-content: center;
+  color:White;
+  font-family: Arial;
+  font-size: 20px;
+}
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  left:5px;
+  z-index: 1;
+  
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #535362;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar hr{
+  margin: 0;
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.sidebar .active {
+  background-color: green;
+  color: white;
+}
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+  
