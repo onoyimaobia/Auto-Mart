@@ -1,0 +1,56 @@
+ a{
+    text-decoration: none;
+    color:white;
+}
+#header {
+    margin: 20px;
+    padding: 20px;
+  
+    background-color: #e3e4e6;
+    color: slategray;
+  }
+  h3{
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+  .detail{
+      margin-top: 3px;
+      display:flex;
+      flex-wrap: wrap;
+  }
+  .detail div {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+  
+}
+ 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content div {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    margin-top: 2px;
+}
+#name, #model, #fuel-type, #color{
+    background-color: white;
+  
+}
+#make, #condition, #transmission, #price{
+    background-color: #535362;
+    color:white;
+}
+@media screen and (max-width: 600px) {
+    .content div {
+        height: 40px;
+        width: 100%;
+    }
+    .detail div {
+        height: 40px;
+        width: 100%;
+    }
+ }
