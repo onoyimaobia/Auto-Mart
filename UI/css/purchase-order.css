@@ -1,0 +1,13 @@
+#name, #condition, #transmission, #price{
+    background-color: white;
+  
+}
+#make,#fuel-type, #color, #update{
+    background-color: #535362;
+    color:white;
+}
+.pdate a{
+    text-decoration: none;
+    color:white;
+    background-color: white;
+}
